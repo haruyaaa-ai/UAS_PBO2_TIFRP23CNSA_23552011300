@@ -35,14 +35,15 @@ Inheritance memungkinkan sebuah class mewarisi properti dan method dari class la
 public class Admin extends User {
     // mewarisi username, password, method login(), dll dari User
 }
-
-2. Encapsulation
-Penjelasan:
+```
+### 2. Encapsulation (Enkapsulasi)
+**Penjelasan:**
 Enkapsulasi menyembunyikan data (menggunakan private) dan hanya membolehkan akses melalui getter dan setter. Hal ini menjaga keamanan data.
 
-Studi Kasus:
+**Contoh Studi Kasus:**
 Misalnya pada class Keuangan:
 
+```java
 public class Keuangan {
     private int pemasukan;
     private int pengeluaran;
@@ -55,16 +56,18 @@ public class Keuangan {
         this.pemasukan = pemasukan;
     }
 }
+```
 
 Field pemasukan dan pengeluaran tidak bisa diakses langsung, melainkan melalui method getter dan setter.
 
-3. Polymorphism
-Penjelasan:
+### 3. Polymorphism (Polimorfisme)
+**Penjelasan:**
 Polimorfisme memungkinkan satu method yang sama memiliki perilaku berbeda tergantung objeknya.
 
-Studi Kasus:
+**Contoh Studi Kasus:**
 Misalnya, ada method tampilkanRingkasan() di class Keuangan dan Laporan, namun dengan implementasi yang berbeda:
 
+```java
 public class Keuangan {
     public void tampilkanRingkasan() {
         System.out.println("Ringkasan keuangan harian.");
@@ -77,24 +80,24 @@ public class Laporan extends Keuangan {
         System.out.println("Ringkasan seluruh laporan keuangan.");
     }
 }
-
+```
 Saat dipanggil, method tampilkanRingkasan() akan menyesuaikan dengan objeknya.
 
-4. Abstract
-Penjelasan:
+### 4. Abstract (Abstraksi)
+**Penjelasan:**
 Abstraksi menyembunyikan kompleksitas implementasi dan hanya menunjukkan fitur penting dari suatu class.
 
-Studi Kasus:
-Jika kamu menggunakan class abstract seperti:
-
+**Contoh Studi Kasus:**
+```java
 public abstract class Pengguna {
     protected String username;
     protected String password;
 
     public abstract void login();
 }
+```
 Kemudian class Admin dan UserBiasa mengimplementasikan method login() dengan cara masing-masing.
 
 # Demo Proyek
-Github: Github
-Youtube: Youtube
+GitHub: Link ke Repository
+YouTube: Link ke Video Demo
