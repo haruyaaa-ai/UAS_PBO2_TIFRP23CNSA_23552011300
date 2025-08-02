@@ -4,9 +4,12 @@
 - **Dosen Pengampu:** Muhammad Ikhwan Fathulloh
 
 ## Profil
+- **Kelompok 9**
+- **Nama:** Damar Satriatama Putra   
+- **NIM:** 23552011300
+- **Nama:** Muhamad Abdul Rafi Muhbab
+- **NIM:** 23552011301
 
-- **Nama:** Damar Satriatama Putra  
-- **NIM:** 23552011300  
 - **Studi Kasus:** Aplikasi Catatan Keuangan
 
 ## Judul Studi Kasus
