@@ -99,5 +99,5 @@ public abstract class Pengguna {
 Kemudian class Admin dan UserBiasa mengimplementasikan method login() dengan cara masing-masing.
 
 # Demo Proyek
-GitHub: Link ke Repository
+GitHub: [GitHub](https://github.com/haruyaaa-ai/UAS_PBO2_TIFRP23CNSA_23552011300)
 YouTube: Link ke Video Demo
