@@ -24,16 +24,17 @@ Fitur utama meliputi:
 Aplikasi dibangun menggunakan **bahasa Java**, paradigma **Object-Oriented Programming (OOP)**, dan antarmuka berbasis **JavaFX**.
 
 # Penjelasan 4 Pilar OOP dalam Studi Kasus
-1. Inheritance
-Penjelasan:
-Inheritance memungkinkan sebuah class mewarisi properti dan method dari class lain, sehingga dapat menghindari penulisan kode yang berulang.
+Penjelasan 4 Pilar OOP dalam Studi Kasus
 
-Studi Kasus:
-Ada class User dan class turunannya seperti Admin, PenggunaBiasa, atau class Transaksi yang mewarisi dari ModelBase. Contohnya:
+### 1. Inheritance (Pewarisan)
+**Penjelasan:**  
+Inheritance memungkinkan sebuah class mewarisi properti dan method dari class lain, sehingga menghindari penulisan kode yang berulang.
 
-'public class Admin extends User {
+**Contoh Studi Kasus:**
+```java
+public class Admin extends User {
     // mewarisi username, password, method login(), dll dari User
-}'
+}
 
 2. Encapsulation
 Penjelasan:
