@@ -1,17 +1,27 @@
 # Final Proyek Pemrograman Berorientasi Obyek 2
-- Mata Kuliah: Pemrograman Berorientasi Obyek 2
-- Dosen Pengampu: Muhammad Ikhwan Fathulloh
-  
-# Profil
-- Nama: Damar Satriatama Putra
-- NIM: 23552011300
-- Studi Kasus: Aplikasi Catatan Keuangan
 
-# Judul Studi Kasus
-Aplikasi Catatan Keuangan Harian Berbasis JavaFX
+- **Mata Kuliah:** Pemrograman Berorientasi Obyek 2  
+- **Dosen Pengampu:** Muhammad Ikhwan Fathulloh
 
-# Penjelasan Studi Kasus
-Aplikasi ini merupakan sistem pencatatan keuangan pribadi yang memungkinkan pengguna mencatat pemasukan dan pengeluaran secara terstruktur. Terdapat fitur login dan register, pencatatan transaksi, serta ringkasan keuangan dalam bentuk grafik batang. Aplikasi ini dibangun menggunakan bahasa pemrograman Java dengan paradigma OOP dan antarmuka JavaFX.
+## Profil
+
+- **Nama:** Damar Satriatama Putra  
+- **NIM:** 23552011300  
+- **Studi Kasus:** Aplikasi Catatan Keuangan
+
+## Judul Studi Kasus
+
+**Aplikasi Catatan Keuangan Harian Berbasis JavaFX**
+
+## Penjelasan Studi Kasus
+
+Aplikasi ini merupakan sistem pencatatan keuangan pribadi yang memungkinkan pengguna mencatat pemasukan dan pengeluaran secara terstruktur.  
+Fitur utama meliputi:
+- Login dan Register
+- Pencatatan Transaksi
+- Ringkasan keuangan dalam bentuk grafik batang
+
+Aplikasi dibangun menggunakan **bahasa Java**, paradigma **Object-Oriented Programming (OOP)**, dan antarmuka berbasis **JavaFX**.
 
 # Penjelasan 4 Pilar OOP dalam Studi Kasus
 1. Inheritance
@@ -19,7 +29,7 @@ Penjelasan:
 Inheritance memungkinkan sebuah class mewarisi properti dan method dari class lain, sehingga dapat menghindari penulisan kode yang berulang.
 
 Studi Kasus:
-Dalam aplikasimu, kemungkinan besar ada class User dan class turunannya seperti Admin, PenggunaBiasa, atau class Transaksi yang mewarisi dari ModelBase. Contohnya:
+Ada class User dan class turunannya seperti Admin, PenggunaBiasa, atau class Transaksi yang mewarisi dari ModelBase. Contohnya:
 
 'public class Admin extends User {
     // mewarisi username, password, method login(), dll dari User
