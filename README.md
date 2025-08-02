@@ -1,1 +1,89 @@
-# UAS_PBO2_TIFRP23CNSA_23552011300
+# Final Proyek Pemrograman Berorientasi Obyek 2
+- Mata Kuliah: Pemrograman Berorientasi Obyek 2
+- Dosen Pengampu: Muhammad Ikhwan Fathulloh
+  
+# Profil
+- Nama: Damar Satriatama Putra
+- NIM: 23552011300
+- Studi Kasus: Aplikasi Catatan Keuangan
+
+# Judul Studi Kasus
+Aplikasi Catatan Keuangan Harian Berbasis JavaFX
+
+# Penjelasan Studi Kasus
+Aplikasi ini merupakan sistem pencatatan keuangan pribadi yang memungkinkan pengguna mencatat pemasukan dan pengeluaran secara terstruktur. Terdapat fitur login dan register, pencatatan transaksi, serta ringkasan keuangan dalam bentuk grafik batang. Aplikasi ini dibangun menggunakan bahasa pemrograman Java dengan paradigma OOP dan antarmuka JavaFX.
+
+# Penjelasan 4 Pilar OOP dalam Studi Kasus
+1. Inheritance
+Penjelasan:
+Inheritance memungkinkan sebuah class mewarisi properti dan method dari class lain, sehingga dapat menghindari penulisan kode yang berulang.
+
+Studi Kasus:
+Dalam aplikasimu, kemungkinan besar ada class User dan class turunannya seperti Admin, PenggunaBiasa, atau class Transaksi yang mewarisi dari ModelBase. Contohnya:
+
+public class Admin extends User {
+    // mewarisi username, password, method login(), dll dari User
+}
+
+2. Encapsulation
+Penjelasan:
+Enkapsulasi menyembunyikan data (menggunakan private) dan hanya membolehkan akses melalui getter dan setter. Hal ini menjaga keamanan data.
+
+Studi Kasus:
+Misalnya pada class Keuangan:
+
+public class Keuangan {
+    private int pemasukan;
+    private int pengeluaran;
+
+    public int getPemasukan() {
+        return pemasukan;
+    }
+
+    public void setPemasukan(int pemasukan) {
+        this.pemasukan = pemasukan;
+    }
+}
+
+Field pemasukan dan pengeluaran tidak bisa diakses langsung, melainkan melalui method getter dan setter.
+
+3. Polymorphism
+Penjelasan:
+Polimorfisme memungkinkan satu method yang sama memiliki perilaku berbeda tergantung objeknya.
+
+Studi Kasus:
+Misalnya, ada method tampilkanRingkasan() di class Keuangan dan Laporan, namun dengan implementasi yang berbeda:
+
+public class Keuangan {
+    public void tampilkanRingkasan() {
+        System.out.println("Ringkasan keuangan harian.");
+    }
+}
+
+public class Laporan extends Keuangan {
+    @Override
+    public void tampilkanRingkasan() {
+        System.out.println("Ringkasan seluruh laporan keuangan.");
+    }
+}
+
+Saat dipanggil, method tampilkanRingkasan() akan menyesuaikan dengan objeknya.
+
+4. Abstract
+Penjelasan:
+Abstraksi menyembunyikan kompleksitas implementasi dan hanya menunjukkan fitur penting dari suatu class.
+
+Studi Kasus:
+Jika kamu menggunakan class abstract seperti:
+
+public abstract class Pengguna {
+    protected String username;
+    protected String password;
+
+    public abstract void login();
+}
+Kemudian class Admin dan UserBiasa mengimplementasikan method login() dengan cara masing-masing.
+
+# Demo Proyek
+Github: Github
+Youtube: Youtube
