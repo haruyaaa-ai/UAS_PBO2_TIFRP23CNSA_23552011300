@@ -21,9 +21,9 @@ Inheritance memungkinkan sebuah class mewarisi properti dan method dari class la
 Studi Kasus:
 Dalam aplikasimu, kemungkinan besar ada class User dan class turunannya seperti Admin, PenggunaBiasa, atau class Transaksi yang mewarisi dari ModelBase. Contohnya:
 
-public class Admin extends User {
+'public class Admin extends User {
     // mewarisi username, password, method login(), dll dari User
-}
+}'
 
 2. Encapsulation
 Penjelasan:
