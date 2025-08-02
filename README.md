@@ -100,4 +100,4 @@ Kemudian class Admin dan UserBiasa mengimplementasikan method login() dengan car
 
 # Demo Proyek
 GitHub: [GitHub](https://github.com/haruyaaa-ai/UAS_PBO2_TIFRP23CNSA_23552011300)
-YouTube: Link ke Video Demo
+YouTube: [YouTube](https://github.com/haruyaaa-ai/UAS_PBO2_TIFRP23CNSA_23552011300)
