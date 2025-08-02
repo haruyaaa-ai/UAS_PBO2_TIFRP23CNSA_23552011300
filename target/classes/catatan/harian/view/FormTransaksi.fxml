@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="catatan.harian.controller.FormTransaksiController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="25.0" spacing="20.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <Label text="Formulir Transaksi">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <GridPane hgap="10.0" vgap="15.0">
+                    <children>
+                        <Label text="Jenis Transaksi" GridPane.rowIndex="0" />
+                        <ComboBox fx:id="jenisComboBox" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        
+                        <Label text="Kategori" GridPane.rowIndex="1" />
+                        <ComboBox fx:id="kategoriComboBox" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        
+                        <Label text="Tanggal" GridPane.rowIndex="2" />
+                        <DatePicker fx:id="tanggalPicker" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        
+                        <Label text="Jumlah (Rp)" GridPane.rowIndex="3" />
+                        <TextField fx:id="jumlahField" promptText="Contoh: 50000" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        
+                        <Label text="Deskripsi" GridPane.rowIndex="4" />
+                        <TextArea fx:id="deskripsiArea" prefHeight="80.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    </children>
+                </GridPane>
+                <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                    <children>
+                        <Button fx:id="simpanButton" onAction="#handleSimpanButton" prefWidth="100.0" text="Simpan" />
+                        <Button fx:id="batalButton" onAction="#handleBatalButton" prefWidth="100.0" text="Batal" />
+                    </children>
+                </HBox>
+                 <Label fx:id="errorLabel" textFill="RED" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

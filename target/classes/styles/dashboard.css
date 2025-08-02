@@ -1,0 +1,73 @@
+/* Mengatur background utama dan font default */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f4f7f6;
+}
+
+/* Gaya untuk kartu ringkasan */
+.summary-card {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.5, 0, 2);
+}
+
+.summary-card-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+}
+
+.summary-card-value {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+/* Warna spesifik untuk setiap kartu */
+#pemasukan-card .summary-card-value {
+    -fx-text-fill: #4CAF50; /* Hijau */
+}
+
+#pengeluaran-card .summary-card-value {
+    -fx-text-fill: #F44336; /* Merah */
+}
+
+#saldo-card .summary-card-value {
+    -fx-text-fill: #2196F3; /* Biru */
+}
+
+
+/* Gaya untuk tombol-tombol */
+.button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #1976D2;
+}
+
+/* Gaya khusus untuk tombol hapus */
+#hapusButton {
+    -fx-background-color: #F44336;
+}
+
+#hapusButton:hover {
+     -fx-background-color: #D32F2F;
+}
+
+/* Gaya untuk tabel */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.5, 0, 2);
+}
+
+/* Header kolom tabel */
+.table-view .column-header {
+    -fx-background-color: #f4f7f6;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}

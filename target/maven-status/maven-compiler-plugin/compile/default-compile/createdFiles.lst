@@ -1,0 +1,16 @@
+catatan\harian\dao\KategoriDAO.class
+catatan\harian\controller\DashboardController.class
+catatan\harian\dao\RingkasanDAO.class
+catatan\harian\util\DatabaseConnection.class
+catatan\harian\model\Kategori.class
+catatan\harian\controller\RegisterController.class
+catatan\harian\dao\TransaksiDAO.class
+com\mycompany\aplikasi_catatan_harian\MainApp.class
+catatan\harian\dao\LaporanDAO.class
+catatan\harian\model\User.class
+catatan\harian\model\LaporanHarian.class
+catatan\harian\model\Transaksi.class
+catatan\harian\controller\LoginController.class
+catatan\harian\dao\UserDAO.class
+catatan\harian\controller\FormTransaksiController.class
+catatan\harian\model\RingkasanKeuangan.class
